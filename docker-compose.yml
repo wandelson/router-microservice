@@ -1,0 +1,27 @@
+version: '3.4'
+
+services:
+  fastshop.router.api:
+    image: fastshoprouter
+    ports:
+  #  - "9999:9999"
+    build:
+      context:  .
+      dockerfile: /Router/Fastshop.Router.Api/Dockerfile
+  fastshop.report.web:
+    image: fastshopreport
+    ports:
+   #   - "8888:8888"
+    build:
+      context: .
+      dockerfile: /Report/Dockerfile
+    links:
+      - "meu_mongo"
+  meu_mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - db_mongo:/data/db
+volumes:
+  db_mongo:

@@ -1,0 +1,142 @@
+﻿@model Fastshop.Report.Web.Models.Transaction
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhe</h2>
+
+<div>
+    <h4>Transação</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Id)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedAt)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CreatedAt)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TID)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TID)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Message)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Message)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Cliente</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Address2)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Address2)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Country)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.PostalCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.PostalCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Billing.State)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Billing.State)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <h4>Pagamento</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Payment.Acquirer)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Payment.Acquirer)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Payment.Amount)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Payment.Amount)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Payment.CardExpirationDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Payment.CardExpirationDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Payment.CardHolder)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Payment.CardHolder)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gateway.Payment.NumberOfPayments)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Gateway.Payment.NumberOfPayments)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index">Voltar a lista</a>
+</div>

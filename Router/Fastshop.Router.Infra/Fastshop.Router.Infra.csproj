@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+    <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.0.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.5.0" />
+  </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Repositories\" />
+      <Folder Include="ExternalServices\" />
+    </ItemGroup>
+    <ItemGroup>
+      <Compile Remove="ExternalServices\.DS_Store" />
+      <Compile Remove=".DS_Store" />
+      <Compile Remove="ExternalServices\StoneService.cs" />
+      <Compile Remove="ExternalServices\EmptyClass.cs" />
+    </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Fastshop.Router\Fastshop.Router.csproj" />
+      <ProjectReference Include="..\ExternalServices.StoneService\Fastshop.ExternalServices.Stone.csproj" />
+      <ProjectReference Include="..\ExternalServices.Cielo\Fastshop.ExternalServices.Cielo.csproj" />
+    </ItemGroup>
+</Project>

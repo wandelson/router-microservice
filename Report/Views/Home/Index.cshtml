@@ -1,0 +1,69 @@
+﻿@model IEnumerable<Fastshop.Report.Web.Models.Transaction>
+
+<div class="row">
+    <div class="col-md-12">
+        <h2 class="text-center"> Logs de registro das transações</h2>
+    </div>
+</div>
+<div class="col-md-12">
+    <p>
+    </p>
+</div>
+<div class="col-md-12">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.TID)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Gateway.Billing.Name)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Gateway.Payment.Amount)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.CreatedAt)
+                </th>
+
+                <th>
+                    @Html.DisplayNameFor(model => model.Gateway.Payment.Acquirer)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(x => item.TID)
+                    </td>
+
+                    <th>
+                        @Html.DisplayFor(x => item.Gateway.Billing.Name)
+                    </th>
+
+                    <th>
+                        @Html.DisplayFor(x => item.Gateway.Payment.Amount)
+                    </th>
+
+                    <th>
+                        @Html.DisplayFor(x => item.CreatedAt)
+                    </th>
+
+                    <th>
+                        @Html.DisplayFor(x => item.Gateway.Payment.Acquirer)
+                    </th>
+                    <th>
+                        @Html.ActionLink("Visualizar", "Details", new { @id = item.TID }, new { @class = "btn btn-warning" })
+                          </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

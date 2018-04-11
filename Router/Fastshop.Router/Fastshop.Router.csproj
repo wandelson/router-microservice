@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>Fastshop.Roteador.Domain</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Application\" />
+    <Folder Include="Application\Transactions\Profiles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Dominio\Produto.cs" />
+    <Compile Remove="Dominio.Modelos\EmptyClass.cs" />
+    <Compile Remove="EmptyClass.cs" />
+    <Compile Remove="Application\Transactions\Profiles\EmptyClass.cs" />
+    <Compile Remove="Application\Orders\Profiles\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="6.2.2" />
+    <PackageReference Include="FluentValidation" Version="7.4.0" />
+  </ItemGroup>
+</Project>

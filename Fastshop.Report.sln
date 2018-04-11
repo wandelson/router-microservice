@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fastshop.Report.Web", "Report\Fastshop.Report.Web.csproj", "{5DE9569E-C722-45D1-AEBD-FD9C935CAB6C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{633A1CBB-C4F7-4708-8214-B12B7B201FBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DE9569E-C722-45D1-AEBD-FD9C935CAB6C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DE9569E-C722-45D1-AEBD-FD9C935CAB6C}.Debug|x86.Build.0 = Debug|Any CPU
+		{5DE9569E-C722-45D1-AEBD-FD9C935CAB6C}.Release|x86.ActiveCfg = Release|Any CPU
+		{5DE9569E-C722-45D1-AEBD-FD9C935CAB6C}.Release|x86.Build.0 = Release|Any CPU
+		{633A1CBB-C4F7-4708-8214-B12B7B201FBE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{633A1CBB-C4F7-4708-8214-B12B7B201FBE}.Debug|x86.Build.0 = Debug|Any CPU
+		{633A1CBB-C4F7-4708-8214-B12B7B201FBE}.Release|x86.ActiveCfg = Release|Any CPU
+		{633A1CBB-C4F7-4708-8214-B12B7B201FBE}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
